@@ -1,3 +1,14 @@
+/**
+ * Developer: Fahd Elharaka
+ * Website: https://web3dev.ma
+ * Email: fahd@web3dev.ma
+ * Telegram: https://t.me/Thisiswhosthis
+ *
+ * Disclaimer: This code is for educational purposes only.
+ *
+ */
+
+
 const fs = require('fs');
 const TronWeb = require('tronweb');
 
