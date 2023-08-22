@@ -8,7 +8,6 @@
  *
  */
 
-
 const fs = require('fs');
 const TronWeb = require('tronweb');
 
@@ -44,8 +43,8 @@ async function main() {
   try {
     while (true) {
       const { address, privateKey } = await generateTrxAddress();
-
       const balance = await checkAddressBalance(address);
+
       console.log('TRX Address:', address);
       console.log('Private Key:', privateKey);
       console.log('Balance:', balance / 1e6, 'TRX');
@@ -54,6 +53,9 @@ async function main() {
         await saveAddressToFile(address, privateKey);
         console.log('Address saved in found.txt');
       }
+
+      // Adding a delay of 0.5 seconds
+      await new Promise(resolve => setTimeout(resolve, 500));
     }
   } catch (error) {
     console.error('Error:', error);
