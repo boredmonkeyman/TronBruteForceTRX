@@ -14,7 +14,7 @@ The purpose of this script is to perform brute-force searching for TRX addresses
 
 ## Usage
 
-*Note: You must have node version >= 16
+> **Please Note:** Ensure that you have Node.js version 16 installed.
 
 To use the script, make sure you have Node.js and npm installed. Then, follow these steps:
 
